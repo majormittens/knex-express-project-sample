@@ -9,13 +9,17 @@ const {
   deleteUser
 } = require('../controllers/user_controller')
 
-router.route('/users')
+const auth = require('../middleware/auth_middleware');
+
+router
+  .route('/users')
   .post(postUsers)
   .get(getUsers)
 
-router.route('/users/:id')
-  .get(getUser)
-  .put(putUser)
-  .delete(deleteUser)
+router
+  .route('/users/:id')
+  .get(auth, getUser)
+  .put(auth, putUser)
+  .delete(auth, deleteUser)
 
 module.exports = router

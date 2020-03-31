@@ -1,6 +1,6 @@
 'use strict'
 
-const createGuts = require('../helpers/model-guts')
+const createGuts = require('../helpers/model_core')
 
 const name = 'Project'
 const tableName = 'projects'

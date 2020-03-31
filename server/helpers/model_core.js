@@ -1,8 +1,8 @@
 'use strict'
 
-// The guts of a model that uses Knexjs to store and retrieve data from a
+// The core of a model that uses Knexjs to store and retrieve data from a
 // database using the provided `knex` instance. Custom functionality can be
-// composed on top of this set of common guts.
+// composed on top of this set of common core.
 //
 // The idea is that these are the most-used types of functions that most/all
 // "models" will want to have. They can be overriden/modified/extended if

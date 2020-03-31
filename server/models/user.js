@@ -1,7 +1,7 @@
 'use strict'
 
 const bcrypt = require('bcrypt')
-const createGuts = require('../helpers/model-guts')
+const createGuts = require('../helpers/model_core')
 
 const name = 'User'
 const tableName = 'users'

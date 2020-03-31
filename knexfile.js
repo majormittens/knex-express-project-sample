@@ -4,7 +4,7 @@
 // TODO: implement more dynamic env var settings loader
 module.exports = {
   development: {
-    client: 'mysql',
+    client: 'mysql2',
     connection: {
       database: 'docgen',
       user:     'root',
